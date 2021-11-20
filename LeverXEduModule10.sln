@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeverXEduModule10", "LeverXEduModule10\LeverXEduModule10.csproj", "{FA21DBDF-262A-48F9-BF29-D3661281216E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA21DBDF-262A-48F9-BF29-D3661281216E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA21DBDF-262A-48F9-BF29-D3661281216E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA21DBDF-262A-48F9-BF29-D3661281216E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA21DBDF-262A-48F9-BF29-D3661281216E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0A840E7-D71E-46AC-8171-CD4B6A55161D}
+	EndGlobalSection
+EndGlobal
