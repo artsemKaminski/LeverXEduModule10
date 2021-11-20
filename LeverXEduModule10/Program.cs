@@ -20,6 +20,15 @@ namespace LeverXEduModule10
                 //var s = companyQuery.Where(x => x.Name == "LeverX");
                 //var ss = s.FirstOrDefault();
 
+                var companyQuery = from c in db.Companies.Include(c => c.Users)
+                                   where c.Users.Any(x => x.Name == "Tom")
+                                   select c; // Query Syntax
+
+                var companyQueryResult = companyQuery.ToList();
+
+                var s = companyQuery.Where(x => x.Name == "LeverX");
+                var ss = s.FirstOrDefault();
+
                 var company = db.Companies.First();
 
                 foreach (var u in company.Users)
