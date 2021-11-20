@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 
 namespace LeverXEduModule10
@@ -9,6 +10,8 @@ namespace LeverXEduModule10
         {
             using (ApplicationContext db = new ApplicationContext())
             {
+                db.Database.Migrate();
+
                 var user1 = new User { Name = "Tom", Age = 33 };
                 var user2 = new User { Name = "Alice", Age = 26 };
 
