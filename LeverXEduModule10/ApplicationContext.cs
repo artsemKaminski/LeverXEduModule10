@@ -16,6 +16,8 @@ namespace LeverXEduModule10
                 .Property(b => b.Age)
                 .HasColumnName("Age_changed_name");
 
+            modelBuilder.Entity<User>().HasData(new User { Id = 1, Name = "Artsem", Age = 36 });
+
         }
     }
 }
