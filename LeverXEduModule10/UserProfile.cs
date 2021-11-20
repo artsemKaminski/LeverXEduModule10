@@ -12,6 +12,6 @@ namespace LeverXEduModule10
         public string Address { get; set; }
         public string PhotoLink { get; set; }
         public int UserId { get; set; }
-        public User User { get; set; }
+        public virtual User User { get; set; }
     }
 }

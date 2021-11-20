@@ -10,7 +10,7 @@ namespace LeverXEduModule10
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=LeverXEduModule10;Trusted_Connection=True;");
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer("Server=localhost;Database=LeverXEduModule10;Trusted_Connection=True;");
             optionsBuilder.LogTo(message => System.Diagnostics.Debug.WriteLine(message), new[] { RelationalEventId.CommandExecuted });
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

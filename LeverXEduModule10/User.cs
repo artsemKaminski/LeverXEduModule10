@@ -13,8 +13,8 @@ namespace LeverXEduModule10
         [Required]
         public string Name { get; set; }
         public int Age { get; set; }
-        public UserProfile Profile { get; set; }
+        public virtual UserProfile Profile { get; set; }
         public int? CompanyId { get; set; }
-        public Company Company { get; set; }
+        public virtual Company Company { get; set; }
     }
 }
