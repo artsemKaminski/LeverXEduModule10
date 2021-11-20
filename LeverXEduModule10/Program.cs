@@ -16,6 +16,10 @@ namespace LeverXEduModule10
         {
             using (ApplicationContext db = new ApplicationContext())
             {
+                //var companyQuery = db.Companies.Where(x => x.Id == 1);
+                //var s = companyQuery.Where(x => x.Name == "LeverX");
+                //var ss = s.FirstOrDefault();
+
                 var company = db.Companies.First();
 
                 foreach (var u in company.Users)
