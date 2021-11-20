@@ -17,7 +17,9 @@ namespace LeverXEduModule10
             using (ApplicationContext db = new ApplicationContext())
             {
                 var company = db.Companies.Include(x => x.Users).First();
-                
+                //db.Entry(company).Collection(t => t.Users).Load();
+                //db.Users.Where(p => p.CompanyId == company.Id).Load();
+
                 foreach (var u in company.Users)
                 {
                     Console.WriteLine($"{u.Id}.{u.Name} - {u.Age}");
