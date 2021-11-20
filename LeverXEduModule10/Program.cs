@@ -10,7 +10,7 @@ namespace LeverXEduModule10
         {
             using (ApplicationContext db = new ApplicationContext())
             {
-                db.Database.Migrate();
+                //db.Database.Migrate();
 
                 var user1 = new User { Name = "Tom", Age = 33 };
                 var user2 = new User { Name = "Alice", Age = 26 };

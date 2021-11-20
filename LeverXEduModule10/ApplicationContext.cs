@@ -10,5 +10,12 @@ namespace LeverXEduModule10
         {
             optionsBuilder.UseSqlServer("Server=localhost;Database=LeverXEduModule10;Trusted_Connection=True;");
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                .Property(b => b.Age)
+                .HasColumnName("Age_changed_name");
+
+        }
     }
 }
