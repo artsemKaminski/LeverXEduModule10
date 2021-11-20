@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
@@ -29,7 +29,7 @@ namespace LeverXEduModule10
         {
             using (ApplicationContext db = new ApplicationContext())
             {
-                db.Database.Migrate();
+                //db.Database.Migrate();
                 db.Database.EnsureDeleted();
                 db.Database.EnsureCreated();
 
