@@ -9,7 +9,7 @@ namespace LeverXEduModule10.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "Age_changed_name", "Name" },
-                values: new object[] { 1, 36, "Artsem" });
+                values: new object[] { 2, 36, "Artsem2" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -17,7 +17,7 @@ namespace LeverXEduModule10.Migrations
             migrationBuilder.DeleteData(
                 table: "Users",
                 keyColumn: "Id",
-                keyValue: 1);
+                keyValue: 2);
         }
     }
 }
